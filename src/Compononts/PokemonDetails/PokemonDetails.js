@@ -1,4 +1,5 @@
 import React from "react";
+import "./PokemonDetails.scss";
 import PokImg from "./PokImg";
 import PokName from "./PokName";
 import PokTypes from "./PokTypes";
@@ -13,16 +14,15 @@ class PokemonDetails extends React.Component {
 
     render() {
         return (
-            <div className="test">
-                <PokImg pokImg={this.props.pokImg}/>
+            <div className="pokdetails">
                 {this.props.pokDetails.map((value,index)=>{
-                    console.log(value)
                     return(
-                        <div className="desc" key={index}>
-                            <PokName pokName={value.name}/>
+                        <div className="pokdetails__inner" key={index}>
+                            <PokName pokName={value.name} pokStatsHp={value.stats}/>
                             <PokTypes pokTypes={value.types}/>
-                            <PokWeight pokWeight={value.weight}/>
-                            <PokTotalMoves pokTotalMoves={value.moves.length}/>
+                            <PokImg pokImg={this.props.pokImg}/>
+                            {/* <PokWeight pokWeight={value.weight}/>
+                            <PokTotalMoves pokTotalMoves={value.moves.length}/> */}
                             <PokStats pokStats={value.stats}/>
                         </div>
                     )

@@ -6,9 +6,10 @@ class PokStats extends React.Component {
     }
 
     render() {
+        const pokStats = this.props.pokStats;
         return (
-            <ul>
-                {this.props.pokStats.map((value,index)=>{
+            <ul className="pokdetails__stats">
+                {pokStats.map((value,index)=>{
                     return(
                         <li key={index}>{value.stat.name}<span>{value.base_stat}</span></li>
                         )

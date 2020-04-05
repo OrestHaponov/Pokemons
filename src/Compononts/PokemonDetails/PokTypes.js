@@ -7,10 +7,10 @@ class PokTypes extends React.Component {
 
     render() {
         return (
-            <ul>
+            <ul className="pokdetails__types">
                 {this.props.pokTypes.map((value,index)=>{
                     return(
-                        <li key={index}>{value.type.name}</li>
+                        <li className={value.type.name} key={index}>{value.type.name}</li>
                         )
                      })}
             </ul>
