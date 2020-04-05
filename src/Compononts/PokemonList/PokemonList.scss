@@ -1,0 +1,156 @@
+.pokemons{
+    &__cards{
+        max-width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__card{
+        text-align: center;
+        width: 300px;
+        border: 1px solid #000;
+        margin: 10px;
+        img{
+            height: 200px;
+        }
+        &__types{
+            list-style: none;
+            padding: 0;
+            li{
+                margin: 5px;
+                display: inline;
+                border-radius: 3px;
+                padding: 2px 5px 2px 5px;
+            }
+        }
+    }
+}
+
+.pagination{
+    text-align: center;
+    list-style: none;
+    li{
+        display: inline;
+        color: #081C24;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'FiraSans-Regular';
+        margin: 7px;
+        border: 1px solid #081C24;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 5px 10px 5px 10px;
+        a{
+            text-decoration: none;
+            color: #081C24;
+        }
+    }
+}
+
+.active{
+    color: #fff;
+    background: #081C24;
+}
+
+.activelink{
+    color: #fff !important;
+}
+
+
+
+
+.grass{
+    background: linear-gradient(to bottom right, #fff, #A1D486);
+    border: 1px solid #A1D486;
+}
+
+.poison{
+    background: linear-gradient(to bottom right, #fff, #9A7DA8);
+    border: 1px solid #9A7DA8;
+}
+
+.fire{
+    background: linear-gradient(to bottom right, #fff, #EB7571);
+    border: 1px solid #EB7571;
+}
+
+.electric{
+    background: linear-gradient(to bottom right, #fff, #FFDC74);
+    border: 1px solid #FFDC74;
+}
+
+.water{
+    background: linear-gradient(to bottom right, #fff, #5077A8);
+    border: 1px solid #5077A8;
+}
+
+.bug{
+    background: linear-gradient(to bottom right, #fff, #9D836E);
+    border: 1px solid #9D836E;
+}
+
+.fighting{
+    background: linear-gradient(to bottom right, #fff, rgb(180, 13, 5));
+    border: 1px solid rgb(180, 13, 5);
+}
+
+.flying{
+    background: linear-gradient(to bottom right, #fff, rgb(8, 65, 136));
+    border: 1px solid rgb(8, 65, 136);
+}
+
+.rock{
+    background: linear-gradient(to bottom right, #fff, rgb(192, 106, 35));
+    border: 1px solid rgb(192, 106, 35);
+}
+
+.ghost{
+    background: linear-gradient(to bottom right, #fff, rgb(124, 124, 124));
+    border: 1px solid rgb(124, 124, 124);
+}
+
+.steel{
+    background: linear-gradient(to bottom right, #fff, rgb(87, 86, 86));
+    border: 1px solid rgb(87, 86, 86);
+}
+
+.psychic{
+    background: linear-gradient(to bottom right, #fff, rgb(175, 38, 168));
+    border: 1px solid rgb(175, 38, 168);
+}
+
+.ice{
+    background: linear-gradient(to bottom right, #fff, rgb(26, 163, 204));
+    border: 1px solid rgb(26, 163, 204);
+}
+
+.dragon{
+    background: linear-gradient(to bottom right, #fff, rgb(170, 11, 5));
+    border: 1px solid rgb(170, 11, 5);
+}
+
+.dark{
+    background: linear-gradient(to bottom right, #fff, rgb(77, 49, 48));
+    border: 1px solid rgb(77, 49, 48);
+}
+
+.fairy{
+    background: linear-gradient(to bottom right, #fff, rgb(190, 98, 178));
+    border: 1px solid rgb(190, 98, 178);
+}
+
+.unknown{
+    background: linear-gradient(to bottom right, #fff, rgb(46, 193, 204));
+    border: 1px solid rgb(46, 193, 204);
+}
+
+.shadow{
+    background: linear-gradient(to bottom right, #fff, rgb(90, 96, 97));
+    border: 1px solid rgb(90, 96, 97);
+}
+
+.ground{
+    background: linear-gradient(to bottom right, #fff, rgb(139, 122, 45));
+    border: 1px solid rgb(139, 122, 45);
+}
