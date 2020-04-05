@@ -1,6 +1,7 @@
    
 import React from "react";
 import "./app.scss";
+import "../fonts/fonts.scss";
 import PokemonList from "../Compononts/PokemonList/PokemonList";
 
 class App extends React.Component {

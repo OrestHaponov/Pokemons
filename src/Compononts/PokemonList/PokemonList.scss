@@ -7,10 +7,23 @@
         align-items: center;
     }
     &__card{
+        background-size: cover;
+        background-position: right;
+        background-color: black;
         text-align: center;
         width: 300px;
-        border: 1px solid #000;
+        height: 400px;
+        border: 2px solid #000;
+        cursor: pointer;
         margin: 10px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Lato-Light';
+        border-radius: 5px;
+        text-transform: capitalize;
         img{
             height: 200px;
         }
@@ -18,6 +31,8 @@
             list-style: none;
             padding: 0;
             li{
+                text-transform: capitalize;
+                font-family: 'FiraSans-Regular';
                 margin: 5px;
                 display: inline;
                 border-radius: 3px;
@@ -30,27 +45,28 @@
 .pagination{
     text-align: center;
     list-style: none;
+    padding: 0;
     li{
         display: inline;
-        color: #081C24;
+        color: #9E0000;
         font-size: 15px;
         font-weight: bold;
         font-family: 'FiraSans-Regular';
         margin: 7px;
-        border: 1px solid #081C24;
+        border: 1px solid #9E0000;
         border-radius: 1px;
         cursor: pointer;
         padding: 5px 10px 5px 10px;
         a{
             text-decoration: none;
-            color: #081C24;
+            color: #9E0000;
         }
     }
 }
 
 .active{
     color: #fff;
-    background: #081C24;
+    background: #9E0000;
 }
 
 .activelink{
@@ -58,99 +74,97 @@
 }
 
 
-
-
 .grass{
-    background: linear-gradient(to bottom right, #fff, #A1D486);
-    border: 1px solid #A1D486;
+    background: linear-gradient(to bottom right, rgb(163, 231, 131), rgb(68, 173, 12));
+    border: 2px solid rgb(68, 173, 12);
 }
 
 .poison{
-    background: linear-gradient(to bottom right, #fff, #9A7DA8);
-    border: 1px solid #9A7DA8;
+    background: linear-gradient(to bottom right, rgb(209, 104, 223), rgb(139, 35, 190));
+    border: 2px solid rgb(139, 35, 190);
 }
 
 .fire{
-    background: linear-gradient(to bottom right, #fff, #EB7571);
-    border: 1px solid #EB7571;
+    background: linear-gradient(to bottom right, rgb(226, 66, 66), rgb(212, 26, 19));
+    border: 2px solid rgb(212, 26, 19);
 }
 
 .electric{
-    background: linear-gradient(to bottom right, #fff, #FFDC74);
-    border: 1px solid #FFDC74;
+    background: linear-gradient(to bottom right, rgb(224, 213, 52), rgb(243, 186, 15));
+    border: 2px solid rgb(243, 186, 15);
 }
 
 .water{
-    background: linear-gradient(to bottom right, #fff, #5077A8);
-    border: 1px solid #5077A8;
+    background: linear-gradient(to bottom right, rgb(58, 66, 139), rgb(14, 71, 141));
+    border: 2px solid rgb(14, 71, 141);
 }
 
 .bug{
-    background: linear-gradient(to bottom right, #fff, #9D836E);
-    border: 1px solid #9D836E;
+    background: linear-gradient(to bottom right, rgb(179, 146, 75), rgb(201, 134, 79));
+    border: 2px solid rgb(201, 134, 79);
 }
 
 .fighting{
-    background: linear-gradient(to bottom right, #fff, rgb(180, 13, 5));
-    border: 1px solid rgb(180, 13, 5);
+    background: linear-gradient(to bottom right, rgb(245, 43, 43), rgb(119, 7, 1));
+    border: 2px solid rgb(119, 7, 1);
 }
 
 .flying{
-    background: linear-gradient(to bottom right, #fff, rgb(8, 65, 136));
-    border: 1px solid rgb(8, 65, 136);
+    background: linear-gradient(to bottom right, rgb(123, 88, 221), rgb(0, 105, 233));
+    border: 2px solid rgb(0, 105, 233);
 }
 
 .rock{
-    background: linear-gradient(to bottom right, #fff, rgb(192, 106, 35));
-    border: 1px solid rgb(192, 106, 35);
+    background: linear-gradient(to bottom right, rgb(247, 131, 54), rgb(90, 46, 9));
+    border: 2px solid rgb(90, 46, 9);
 }
 
 .ghost{
-    background: linear-gradient(to bottom right, #fff, rgb(124, 124, 124));
-    border: 1px solid rgb(124, 124, 124);
+    background: linear-gradient(to bottom right, rgb(102, 69, 69), rgb(75, 63, 63));
+    border: 2px solid rgb(75, 63, 63);
 }
 
 .steel{
-    background: linear-gradient(to bottom right, #fff, rgb(87, 86, 86));
-    border: 1px solid rgb(87, 86, 86);
+    background: linear-gradient(to bottom right, rgb(87, 84, 84), rgb(119, 101, 101));
+    border: 2px solid rgb(119, 101, 101);
 }
 
 .psychic{
-    background: linear-gradient(to bottom right, #fff, rgb(175, 38, 168));
-    border: 1px solid rgb(175, 38, 168);
+    background: linear-gradient(to bottom right, #aa3fd4, rgb(194, 0, 184));
+    border: 2px solid rgb(194, 0, 184);
 }
 
 .ice{
-    background: linear-gradient(to bottom right, #fff, rgb(26, 163, 204));
-    border: 1px solid rgb(26, 163, 204);
+    background: linear-gradient(to bottom right, rgb(40, 145, 177), rgb(0, 195, 255));
+    border: 2px solid rgb(0, 195, 255);
 }
 
 .dragon{
-    background: linear-gradient(to bottom right, #fff, rgb(170, 11, 5));
-    border: 1px solid rgb(170, 11, 5);
+    background: linear-gradient(to bottom right, rgb(102, 4, 4), rgb(100, 6, 3));
+    border: 2px solid rgb(100, 6, 3);
 }
 
 .dark{
-    background: linear-gradient(to bottom right, #fff, rgb(77, 49, 48));
-    border: 1px solid rgb(77, 49, 48);
+    background: linear-gradient(to bottom right, rgb(70, 23, 23), rgb(61, 33, 32));
+    border: 2px solid rgb(61, 33, 32);
 }
 
 .fairy{
-    background: linear-gradient(to bottom right, #fff, rgb(190, 98, 178));
-    border: 1px solid rgb(190, 98, 178);
+    background: linear-gradient(to bottom right, rgb(107, 13, 126), rgb(148, 4, 129));
+    border: 2px solid rgb(148, 4, 129);
 }
 
 .unknown{
-    background: linear-gradient(to bottom right, #fff, rgb(46, 193, 204));
-    border: 1px solid rgb(46, 193, 204);
+    background: linear-gradient(to bottom right, rgb(35, 125, 185), rgb(0, 171, 184));
+    border: 2px solid rgb(0, 171, 184);
 }
 
 .shadow{
-    background: linear-gradient(to bottom right, #fff, rgb(90, 96, 97));
-    border: 1px solid rgb(90, 96, 97);
+    background: linear-gradient(to bottom right, rgb(66, 66, 66), rgb(68, 64, 64));
+    border: 2px solid rgb(68, 64, 64);
 }
 
 .ground{
-    background: linear-gradient(to bottom right, #fff, rgb(139, 122, 45));
-    border: 1px solid rgb(139, 122, 45);
+    background: linear-gradient(to bottom right, rgb(64, 70, 30), rgb(66, 56, 12));
+    border: 2px solid rgb(66, 56, 12);
 }

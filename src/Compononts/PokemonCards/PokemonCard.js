@@ -2,6 +2,7 @@ import React from "react";
 import PokemonImage from "./PokemonImage";
 import PokemonName from "./PokemonName";
 import PokemonTypes from "./PokemonTypes";
+import pokCardBg from "./pokCardBg.jpg";
 
 class PokemonCard extends React.Component {
     constructor(props){
@@ -11,6 +12,7 @@ class PokemonCard extends React.Component {
     render() {
         return (
             <div className="pokemons__card" 
+            style={{backgroundImage: "url(" + pokCardBg + ")"}}
             onClick={()=>this.props.getPokDetails(this.props.pokDetails,this.props.pokImg)}
             >
                 <PokemonImage pokImg={this.props.pokImg}/>
