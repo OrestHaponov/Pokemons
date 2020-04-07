@@ -1,4 +1,4 @@
-import {ADD_POKEMONS, HANDLE_PAGE_CHANGE} from "./actionTypes";
+import {ADD_POKEMONS,HANDLE_PAGE_CHANGE,VALUE_CHANGE,FILTERED_POKES,GET_VALUE,REWRITE,CLEAR_INPUT} from "./actionTypes";
 
 export function getPokemons(listEachPokemon){
     return{
@@ -40,3 +40,49 @@ export function fetchPokemons(pageNumber){
 }
 
 
+export function handleChange(event){
+    return{
+        type: VALUE_CHANGE,
+        event
+    }
+}
+
+export function getValue(searchValue){
+    return{
+        type: GET_VALUE,
+        searchValue
+    }
+}
+
+export function filteredPokes(types){
+    return{
+        type: FILTERED_POKES,
+        types
+    }
+}
+
+export function rewrite(){
+    return{
+        type: REWRITE
+    }
+}
+
+export function clearInputValue(){
+    return{
+        type: CLEAR_INPUT
+    }
+}
+
+export function filterByTypes(searchValue,pokList){
+    return (dispatch) =>{
+        dispatch(rewrite());
+        dispatch(getValue(searchValue));
+        pokList.map((types)=>
+        types.types.map((name)=>{
+            if (searchValue == name.type.name){
+                dispatch(filteredPokes(types));
+            }})
+        );
+        dispatch(clearInputValue());
+    }
+}

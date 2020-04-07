@@ -1,5 +1,5 @@
 import React from "react";
-import fon from "./fon.jpg";
+import pokDetailBackground from "./pokDetailBackground.jpg";
 
 class PokImg extends React.Component {
     constructor(props){
@@ -10,7 +10,7 @@ class PokImg extends React.Component {
         return (
             <div className="pokdetails__image">
                 <div className="pokdetails__image-background">
-                    <img src={fon} alt=""/>
+                    <img src={pokDetailBackground} alt=""/>
                 </div>
                 <div className="pokdetails__image-pokemon">
                     <img src={this.props.pokImg} alt=""/>

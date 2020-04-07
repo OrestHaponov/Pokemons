@@ -21,7 +21,7 @@ class PokemonPopup extends React.Component {
                     getPokDetails={this.props.getPokDetails}
                 />
                 </div>
-        }
+            }
             modal
             closeOnDocumentClick
         >

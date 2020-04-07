@@ -2,6 +2,7 @@
 import React from "react";
 import "./app.scss";
 import "../fonts/fonts.scss";
+import back from "./back.png";
 import PokemonList from "../Compononts/PokemonList/PokemonList";
 
 class App extends React.Component {
@@ -10,7 +11,9 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div className="app">
+            <div className="app"
+            style={{backgroundImage: "url(" + back + ")"}}
+            >
               <PokemonList />
             </div>
         );

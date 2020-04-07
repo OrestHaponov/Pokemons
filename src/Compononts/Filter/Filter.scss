@@ -1,0 +1,70 @@
+.filter{
+    margin-top: 20px;
+    &__inner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__staff{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+        h3{
+            font-family: 'Montserrat Regular';
+            margin-bottom: 7px;
+            margin-top: 0;
+        }
+        input{
+            margin-top: 5px;
+            margin: 10px;
+            outline: none;
+            background: #E9EFF6;
+            border-radius: 20px;
+            height: 25px;
+            width: 150px;
+            border: none;
+            padding-left: 10px;
+        }
+        button{
+            font-size: 15px;
+            font-weight: bold;
+            width: 150px;
+            height: 35px;
+            outline: none;
+            border-radius: 10px;
+            background: #ff9c70;
+            border: none;
+            border-bottom: 2px solid #d87d56;
+            color: #fff;
+            &:hover{
+                width: 155px;
+                height: 38px;
+                transition: 0.5s;
+            }
+        }
+    }
+    &__all{
+        button{
+            font-size: 15px;
+            font-weight: bold;
+            width: 150px;
+            height: 35px;
+            outline: none;
+            border-radius: 10px;
+            background: #ff9c70;
+            border: none;
+            border-bottom: 2px solid #d87d56;
+            color: #fff;
+            &:hover{
+                width: 155px;
+                height: 38px;
+                transition: 0.5s;
+            }
+        }
+    }
+}
